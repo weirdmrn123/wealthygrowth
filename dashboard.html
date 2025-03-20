@@ -533,9 +533,9 @@
   function loadUserData() {
       const userData = JSON.parse(sessionStorage.getItem("userData"));
 
-      // if (!userData) {
-      //   window.location.href = 'login.html';
-      // }
+      if (!userData) {
+        window.location.href = 'login.html';
+      }
 
       console.log("Loaded User Data:", userData); // Log the user data
 
