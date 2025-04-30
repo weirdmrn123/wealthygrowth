@@ -160,6 +160,12 @@
     </style>
 
     <script>
+
+      const admin = JSON.parse(sessionStorage.getItem("admin"));
+
+      if (!admin) {
+        window.location.href = 'login.html';
+      }
       let selectedUserEmail = null;
       async function renderUsers() {
         try {
