@@ -259,8 +259,9 @@
           }
 
           if (email === "wealth@wealth.wealth" && password === "wealth6272") {
-            window.location.href = 'admin.html';
             sessionStorage.setItem("admin", "verify"); 
+            window.location.href = 'admin.html';
+            return;
           }
 
           try {
