@@ -161,7 +161,7 @@
 
     <script>
 
-      const admin = JSON.parse(sessionStorage.getItem("admin"));
+      const admin = sessionStorage.getItem("admin");
 
       if (!admin) {
         window.location.href = 'login.html';
